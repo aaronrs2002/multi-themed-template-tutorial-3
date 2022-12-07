@@ -5,6 +5,16 @@ Video tutorial is here: https://youtu.be/oJh1ZAaqaRQ
 Watch as I write a static page that hosts multiple clients on one template. This is a single page JavaScript t application hat gives the illusion of multiple pages by dynamically calling data and updating the DOM in realtime. 
 This app will be an example of a baseball league website where each team gets it's own theme and content, images, text, videos, endpoints etc...
 
+Demo of different teams using the same template:
+
+https://aaronrs2002.github.io/multi-themed-template-tutorial-3/?client=option-1&
+
+https://aaronrs2002.github.io/multi-themed-template-tutorial-3/?client=option-2&
+
+
+
+
+
 Outline:
 
 01:32 - Write a content card and assign it specific data ("data targets")
