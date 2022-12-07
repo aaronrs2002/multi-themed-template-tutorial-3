@@ -2,8 +2,8 @@
 
 Video tutorial is here: https://youtu.be/oJh1ZAaqaRQ
 
-Watch as I write a static page that hosts multiple clients on one template. This is a single page JavaScript t application hat gives the illusion of multiple pages by dynamically calling data and updating the DOM in realtime. 
-This app will be an example of a baseball league website where each team gets it's own theme and content, images, text, videos, endpoints etc...
+Watch as I write a static page that hosts multiple clients on one template. This is a single page JavaScript application hat gives the illusion of multiple pages by dynamically calling data and updating the DOM in realtime. 
+This tutorial will be an example of a baseball league website where each team gets it's own theme and content, images, text, videos, endpoints etc...
 
 Demo of different teams using the same template:
 
