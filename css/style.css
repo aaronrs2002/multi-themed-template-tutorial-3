@@ -248,33 +248,21 @@ body[data-design='option-2'] {
         width: 100%;
         height: auto;
     }
+}
 
-    /*END 768PX WIDTH*/
+/*END 768PX WIDTH*/
 
-    @media (max-width:768px) {
+@media (max-width:768px) {
 
-        /*START GLOBAL MOBILE*/
-        .lead {
-            font-size: .75rem;
-            font-weight: 300;
-        }
-
-        #designOptions {
-
-            margin-top: 50%;
-
-        }
-
-
-        /*START OPTION 1 MOBILE*/
-
-        [data-design="option-1"] #banner {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../baseball_images/baseballBanner1.jpeg);
-
-        }
-
-
-
+    /*START GLOBAL MOBILE*/
+    .lead {
+        font-size: .75rem;
+        font-weight: 300;
     }
 
-    /*END 768PX WIDTH*/
+    #designOptions {
+        margin-top: 50%;
+    }
+}
+
+/*END 768PX WIDTH*/
