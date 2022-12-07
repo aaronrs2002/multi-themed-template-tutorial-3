@@ -235,30 +235,46 @@ body[data-design='option-2'] {
 
 
 /*START MOBILE CSS*/
-@media (max-width:768px) {
+@media (max-width:1200px) {
 
-    /*START GLOBAL MOBILE*/
-    .lead {
-        font-size: .75rem;
-        font-weight: 300;
-    }
-
-    #designOptions {
-
-        margin-top: 50%;
+    [data-page="1"] .h-md-250 {
+        min-height: none;
+        max-height: none;
+        overflow-y: inherit;
 
     }
 
+    [data-page="1"] .h-md-250 img {
+        width: 100%;
+        height: auto;
+    }
 
-    /*START OPTION 1 MOBILE*/
+    /*END 768PX WIDTH*/
 
-    [data-design="option-1"] #banner {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../baseball_images/baseballBanner1.jpeg);
+    @media (max-width:768px) {
+
+        /*START GLOBAL MOBILE*/
+        .lead {
+            font-size: .75rem;
+            font-weight: 300;
+        }
+
+        #designOptions {
+
+            margin-top: 50%;
+
+        }
+
+
+        /*START OPTION 1 MOBILE*/
+
+        [data-design="option-1"] #banner {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../baseball_images/baseballBanner1.jpeg);
+
+        }
+
+
 
     }
 
-
-
-}
-
-/*END 768PX WIDTH*/
+    /*END 768PX WIDTH*/
