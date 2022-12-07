@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&Roboto+Condensed:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Carter+One|Wire+One|Oswald|Saira+Extra+Condensed|Passion+One|Yanone+Kaffeesatz|Carter+One|Racing+Sans+One|Marcellus+SC|Teko&display=swap");
+
+/*START GLOABL CSS*/
+
+main {
+    padding-top: 80px;
+}
+
+#youTubePanel {
+    width: 100%;
+    min-height: 350px;
+    height: auto;
+}
+
+.hide {
+    display: none;
+}
+
+[data-page="1"] .h-md-250 {
+    min-height: 225px;
+    max-height: 225px;
+    overflow-y: hidden;
+}
+
+
+#bannerTxt {
+    position: absolute;
+    z-index: 2;
+    margin: 25px;
+}
+
+#banner {
+    min-height: 300px;
+}
+
+#bannerTxt {
+    max-width: 60%;
+}
+
+.card-heading {
+    padding-top: 20px;
+}
+
+[data-page="2"] .card {
+    min-height: 350px;
+}
+
+#StoryOneBanner {
+    color: #fff;
+}
+
+footer {
+    box-shadow: 0px -4px 3px rgb(0 0 0 / 8%);
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+}
+
+
+
+/*START DESIGN THEME PANEL*/
+
+#designOptions {
+    position: fixed;
+    z-index: 5;
+    margin-top: 13%;
+    color: #fff;
+}
+
+#designOptions ul,
+#designOptions ul li {
+    list-style-type: disc;
+    margin-left: -15px !important;
+
+}
+
+/*START CUSTOM RADIO BUTTON*/
+.radioContainer {
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/*hide browser default buttton*/
+.radioContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 0.15px #eee solid;
+    border-radius: 50%;
+}
+
+
+/*on mouse over, add grey bg color*/
+.radioContainer:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+input[value='option-1']+.checkmark {
+    background-color: #000;
+}
+
+input[value='option-2']+.checkmark {
+    background-color: #dc4c16;
+}
+
+
+
+/*SATART OPTION 1*/
+
+body[data-design='option-1'] {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f8f8f8;
+    font-size: 1rem;
+    font-family: "Teko", sans-serif;
+}
+
+[data-design="option-1"] #bannerTxt h1,
+[data-design="option-1"] .lead,
+[data-design="option-1"] #bannerTxt a {
+    color: #fff;
+}
+
+[data-design="option-1"] #bannerTxt .lead,
+[data-design="option-1"] #bannerTxt a {
+    font-family: "Teko", sans-serif;
+}
+
+[data-design="option-1"] #bannerTxt h1,
+[data-design='option-1'] h1,
+[data-design='option-1'] h2,
+[data-design='option-1'] h3,
+[data-design='option-1'] h4,
+[data-design='option-1'] h5,
+[data-design='option-1'] nav,
+[data-design='option-1'] .flex-md-row strong,
+[data-design='option-1'] .flex-md-row a {
+    font-family: 'Rubik Distressed', cursive;
+}
+
+[data-design='option-1'] #banner {
+    background-image: url("../baseball_images/baseballBanner1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 25%;
+}
+
+[data-design='option-1'] .topicThumb {
+    width: 325px;
+    height: auto;
+    overflow: hidden;
+    filter: grayscale(1);
+}
+
+/*SATART OPTION 2*/
+
+body[data-design='option-2'] {
+    font-family: 'Overpass', sans-serif;
+    background-color: #333;
+    font: size 0.75rem;
+}
+
+
+[data-design='option-2'] h1,
+[data-design='option-2'] h2,
+[data-design='option-2'] h3,
+[data-design='option-2'] h4,
+[data-design='option-2'] h5,
+[data-design='option-2'] nav,
+[data-design='option-2'] .flex-md-row strong,
+[data-design='option-2'] .flex-md-row a,
+[data-design='option-2'] #bannerTxt a {
+    font-family: 'Bangers', cursive;
+}
+
+[data-design='option-2'] #banner {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../baseball_images/baseballBanner2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 25%;
+    filter: grayscale(1);
+
+}
+
+[data-design='option-2'] [data-page='3'] ul li,
+[data-design='option-2'] h1,
+[data-design='option-2'] h2,
+[data-design='option-2'] h3,
+[data-design='option-2'] h4,
+[data-design='option-2'] h5,
+[data-design='option-2'] #bannerTxt {
+    color: rgb(238, 188, 5);
+}
+
+[data-design='option-2'] footer {
+    background-color: #888;
+}
+
+[data-design='option-2'] .flex-column {
+    background-color: #f8f8f8;
+}
+
+[data-design='option-2'] .topicThumb {
+    width: 325px;
+    height: auto;
+    overflow: hidden;
+    filter: grayscale(1);
+}
+
+
+
+/*START MOBILE CSS*/
+@media (max-width:768px) {
+
+    /*START GLOBAL MOBILE*/
+    .lead {
+        font-size: .75rem;
+        font-weight: 300;
+    }
+
+    #designOptions {
+
+        margin-top: 50%;
+
+    }
+
+
+    /*START OPTION 1 MOBILE*/
+
+    [data-design="option-1"] #banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../baseball_images/baseballBanner1.jpeg);
+
+    }
+
+
+
+}
+
+/*END 768PX WIDTH*/

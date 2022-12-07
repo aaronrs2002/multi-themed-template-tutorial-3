@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Multi-Client Single Template</title>
+</head>
+
+<body data-design="option-2">
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Baseball</a>
+                <button class="navbar-toggler" type="button" onclick="javascript:toggleMobileNav('toggle')">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="javascript:toggleMobileNav('1')" data-link="1"
+                                href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:toggleMobileNav('2')" data-link="2">Story1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:toggleMobileNav('3')" data-link="3">Contact</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div data-page="1">
+            <div class="row">
+                <div class="col-md-12 px-0" id="bannerTxt"></div>
+                <div class="p-4 p-md-5 mb-4 rounded bg-dark" id="banner">
+
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static" id="story1page1">
+
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img id="teaseImage1" src="baseball_images/team1Story2.jpeg" class="topicThumb" />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static" id="story2page1">
+
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img id="teaseImage2" src="baseball_images/team1Story2.jpeg" class="topicThumb" />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 card" id="story3page1">
+
+                </div>
+            </div>
+        </div>
+        <div class="hide" data-page="2">
+            <div class="row">
+
+                <div class="p-4 p-md-5 mb-4 rounded" id="StoryOneBanner">
+                    <div class="col-md-12 px-0">
+                        <h2 id="pageTwoTitle"></h2>
+                        <ul class="list-unstyled">
+                            <li>Phone:<span class="phone"></span></li>
+                            <li>Email:<span class="email"></span></li>
+                            <li>Address:<span class="address"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-heading">
+
+                        </div>
+                        <div class="card-body">
+                            <p id="storyOne"> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <iframe id="youTubePanel" src="https://www.youtube.com/embed/ibmxzILBqoQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hide" data-page="3">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="contactTitle"></h2>
+                    <ul class="list-unstyled">
+                        <li>Phone:<span class="phone"></span></li>
+                        <li>Email:<span class="email"></span></li>
+                        <li>Address:<span class="address"></span></li>
+                    </ul>
+                    <div class="form-group my-5">
+                        <form action id="contactAction">
+                            <input type="text" class="form-control" name="first-name" placeholder="First Name" />
+                            <input type="text" class="form-control" name="flast-name" placeholder="Last Name" />
+                            <input type="text" class="form-control" name="email" placeholder="Email" />
+                            <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">copyright 2022</div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">Web-Presence LLC</div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/localData.js"></script>
+    <script src="js/functionality.js"></script>
+
+</body>
+
+</html>
