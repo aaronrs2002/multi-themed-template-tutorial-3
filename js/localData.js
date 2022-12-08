@@ -1,4 +1,4 @@
-const data = [{
+ const data = [{
 
 
     "page1": [{
@@ -26,8 +26,8 @@ const data = [{
 
     "page1": [{
         "bannerTxt": "<h1 class='display-4 fst-italic'>This is your \"Second Client\"</h1><p class='lead my-3'>Typically, this data will be requested when the page loads. Based on the url parameter values, the site reaches out and grabs the appropriate data to fill the template.</p><p class='lead mb-0'><a href='javascript:toggleMobileNav(2)' class=' fw-bold'>Continue reading...</a></p>",
-        "story1page1": "<strong class='d-inline-block mb-2 text-success'>Second Post</strong><h3 class='mb-0'>Gonna be great!</h3><div class='mb-1 text-muted'>Nov 11</div><p id='storyTeaseOne'></p><a href='javascript:toggleMobileNav(2)' class='stretched-link'>Continue reading</a>",
-        "story2page1": "<strong class='d-inline-block mb-2 text-success'>Hello World!</strong><h3 class='mb-0'>Welcome!</h3><div class='mb-1 text-muted'>Nov 11</div><p id='storyTeaseTwo'></p><a href='javascript:toggleMobileNav(2)' class='stretched-link'>Continue reading</a>",
+        "story1page1": "<h3 class='mb-0'>Gonna be great!</h3><p id='storyTeaseOne'></p><a href='javascript:toggleMobileNav(2)' class='stretched-link'>Continue reading</a>",
+        "story2page1": "<h3 class='mb-0'>Welcome!</h3><p id='storyTeaseTwo'></p><a href='javascript:toggleMobileNav(2)' class='stretched-link'>Continue reading</a>",
         "story3page1": "<div class='card-heading'><h2>The game was rained out.</h2></div><div class='card-body'><p>Cras eros enim, pulvinar sit amet neque nec, porta efficitur velit. Duis at molestie orci. Praesent dolor nisi, egestas eu ante quis, posuere congue nulla. Vestibulum pharetra interdum urna, id eleifend magna. Nulla et sapien metus. Suspendisse aliquet sed velit at mollis. Curabitur molestie mi eu pretium lobortis. Mauris et pharetra lectus. Donec sollicitudin bibendum turpis pretium tempor. Nunc in ipsum sit amet enim semper sagittis dapibus sit amet metus. Vestibulum pulvinar magna ligula, non lacinia sapien faucibus et. Fusce at nunc quis nunc eleifend tincidunt. Suspendisse feugiat ligula vitae risus ultrices, nec faucibus ligula condimentum.</p></div>"
         , "teaseImage1": "baseball_images/team2Story1.jpg",
         "teaseImage2": "baseball_images/team2Story2.jpeg",
