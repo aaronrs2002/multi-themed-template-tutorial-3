@@ -27,8 +27,8 @@ document.getElementById("bannerTxt").innerHTML = data[designOptions.indexOf(whic
 document.getElementById("story1page1").innerHTML = data[designOptions.indexOf(whichClient)].page1[0].story1page1;
 document.getElementById("story2page1").innerHTML = data[designOptions.indexOf(whichClient)].page1[0].story2page1;
 document.getElementById("story3page1").innerHTML = data[designOptions.indexOf(whichClient)].page1[0].story3page1;
-document.getElementById("storyTeaseOne").innerHTML = data[designOptions.indexOf(whichClient)].page1[0].storyOne.substring(0, 55) + "...";
-document.getElementById("storyTeaseTwo").innerHTML = data[designOptions.indexOf(whichClient)].page1[0].storyTwo.substring(0, 55) + "...";
+document.getElementById("storyTeaseOne").innerHTML = data[designOptions.indexOf(whichClient)].page1[0].storyOne.substring(0, 85) + "...";
+document.getElementById("storyTeaseTwo").innerHTML = data[designOptions.indexOf(whichClient)].page1[0].storyTwo.substring(0, 85) + "...";
 
 
 document.getElementById("teaseImage1").setAttribute("src", data[designOptions.indexOf(whichClient)].page1[0].teaseImage1);
