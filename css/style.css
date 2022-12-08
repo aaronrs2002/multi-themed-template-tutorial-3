@@ -240,7 +240,8 @@ body[data-design='option-2'] {
     [data-page="1"] .h-md-250 {
         min-height: none;
         max-height: none;
-        overflow-y: inherit;
+        max-height: 475px;
+        overflow-y: hidden;
 
     }
 
